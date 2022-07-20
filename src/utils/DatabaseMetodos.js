@@ -5,13 +5,11 @@ class DatabaseMetodos {
      * Retorna uma dica randomizada
      * @returns Object
      */
-    static randomizar() {
-        function pegarIndice(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min)) + min;
+    static randomizar(){
+        function pegarIndice() {
+            return Math.floor(Math.random() * Database.Dicas.length);
         }
-        return Database.Dicas[pegarIndice(0, Database.Dicas.length)]
+        return Database.Dicas[pegarIndice()]
     }
 
     /**
