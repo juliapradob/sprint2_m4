@@ -1,6 +1,6 @@
 import express from "express";
 import * as dotenv from "dotenv";
-import Dicas from "./src/controller/Dicas";
+import Dicas from "./src/controller/Dicas.js";
 
 dotenv.config();
 
