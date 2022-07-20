@@ -24,3 +24,5 @@ class DatabaseMetodos {
         return Database.Dicas
     }
 }
+
+export default DatabaseMetodos
